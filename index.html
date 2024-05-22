@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-         body {
+        body {
             background: url('background.png') no-repeat center center fixed;
             background-size: cover;
         }
+
         footer {
             position: fixed;
             bottom: 0;
@@ -21,25 +23,50 @@
             color: black;
             padding: 20px 0;
         }
+
         .copyright {
             font-size: 12px;
             color: #6c757d;
             text-align: center;
             margin-top: 20px;
         }
+
         .bg-image {
             background-image: url('/background.png');
             background-size: cover;
             background-position: center;
-            height: 100vh; /* Adjust as needed */
+            height: 100vh;
+            /* Adjust as needed */
         }
-        #about-us > p {
-    margin-right: 200px; /* Adjust as needed */
+
+        #about-us>p {
+            margin-top: 50px;
+            margin-right: 200px;
+            margin-bottom: 100px
+            /* Adjust as needed */
+        }
+
+.btn{
+    padding: 10px 30px;
 }
+.btn-primary {
+    margin-top: 150px;
+    background-color: #F37935;
+            border: none;
+}
+        .btn-secondary{
+            margin-right: 200px;
+            background-color: #F0AD00;
+            border: none;
+        }
+
+
+
     </style>
 
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -50,32 +77,32 @@
                 <img src="/logo.png" alt="Logo" class="img-fluid" style="max-height: 100px;">
             </div>
             <!-- Home Icon -->
-            
+
             <div class="col-md-6 d-flex justify-content-end">
-            <div class="home-icon ">
-                <a href="#" class="material-icons text-dark">home</a>
+                <div class="home-icon ">
+                    <a href="#" class="material-icons text-dark">home</a>
+                </div>
+                <!-- Navbar -->
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Staffs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <!-- Navbar -->
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Appointment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Staffs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         </div>
     </header>
 
@@ -87,14 +114,16 @@
                 <section id="about-us" class="mb-6">
                     <h2>About Us</h2>
                     <p>
-                        We are Clinic Fair Pets Veterinary, a small vet clinic that wants to provide high-end veterinary care with love and compassion for our favorite household family member. We promote optimal health for all stages of life.                    </p>
-
-                        <!-- Book Your Visit Button -->
+                        We are Clinic Fair Pets Veterinary, a small vet clinic that wants to provide high-end veterinary
+                        care with love and compassion for our favorite household family member. We promote optimal
+                        health for all stages of life.
+                    </p>
+                    <!-- Book Your Visit Button -->
                     <a href="#" class="btn btn-primary">Book Your Visit</a>
                 </section>
             </div>
             <!-- Right Section -->
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex align-items-end justify-content-end">
                 <section id="products" class="mb-6">
                     <!-- Our Products Button -->
                     <a href="#" class="btn btn-secondary">Our Products</a>
@@ -102,6 +131,7 @@
             </div>
         </div>
     </main>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -133,4 +163,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
