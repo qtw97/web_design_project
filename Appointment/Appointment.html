@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 50px; /* Adjust as needed */
+        }
+        .copyright {
+            font-size: 12px;
+            color: #6c757d;
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-light py-3">
+            <div class="container d-flex justify-content-between align-items-center position-relative">
+                <!-- Logo -->
+                <div>
+                    <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <!-- Home Icon -->
+                <div class="home-icon">
+                    <a href="#" class="material-icons text-dark">home</a>
+                </div>
+                <!-- Navbar -->
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Staffs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main>
+            <h2>See you soon!</h2>
+            <p class="FORM"> PLEASE FILL OUT THIS FORM TO REQUEST FOR AN APPOINTMENT.</p>
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>First name<small> (required)</small></td>
+                        <td><input type="text" name="firstname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name<small> (required)</small></td>
+                        <td><input type="text" name="lastname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pet's name<small> (required)</small></td>
+                        <td><input type="text" name="petname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number<small> (required)</small></td>
+                        <td><input type="tel" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address<small>(required)</small></td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pet's Species</td>
+                        <td>
+                            <select name="species" required>
+                                <option value=""></option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option> 
+                                <option value="other">Other animals</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Date</td>
+                        <td><input type="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Time</td>
+                        <td><input type="time" name="time" required></td>
+                    </tr>
+                    <tr>
+                        <td>Reason for Visit</td>
+                        <td><textarea name="reason" rows="4" required></textarea></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="Submit Appointment">
+            </form>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><span class="material-icons">email</span> Email</h5>
+                        <p>contact@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><span class="material-icons">location_on</span> Address</h5>
+                        <p>1234 Example St, City, Country</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><span class="material-icons">phone</span> Tel</h5>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <p class="copyright">© 2024 Company. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html> 
