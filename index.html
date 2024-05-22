@@ -10,10 +10,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-        .footer {
-            background-color: #f8f9fa;
-            padding: 20px;
-            margin-top: 50px; /* Adjust as needed */
+         body {
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            padding: 20px 0;
         }
         .copyright {
             font-size: 12px;
@@ -21,6 +27,17 @@
             text-align: center;
             margin-top: 20px;
         }
+        .bg-image {
+            background-image: url('/background.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Adjust as needed */
+        }
+        #about-us > p {
+    margin-right: 200px; /* Adjust as needed */
+}
+    </style>
+
     </style>
 </head>
 <body>
@@ -67,18 +84,18 @@
         <div class="row">
             <!-- Left Section -->
             <div class="col-md-6">
-                <section id="about-us" class="mb-5">
+                <section id="about-us" class="mb-6">
                     <h2>About Us</h2>
                     <p>
-                        Welcome to our website! We are dedicated to providing the best service possible. Our team of professionals is here to assist you with all your needs.
-                    </p>
-                    <!-- Book Your Visit Button -->
+                        We are Clinic Fair Pets Veterinary, a small vet clinic that wants to provide high-end veterinary care with love and compassion for our favorite household family member. We promote optimal health for all stages of life.                    </p>
+
+                        <!-- Book Your Visit Button -->
                     <a href="#" class="btn btn-primary">Book Your Visit</a>
                 </section>
             </div>
             <!-- Right Section -->
             <div class="col-md-6">
-                <section id="products" class="mb-5">
+                <section id="products" class="mb-6">
                     <!-- Our Products Button -->
                     <a href="#" class="btn btn-secondary">Our Products</a>
                 </section>
