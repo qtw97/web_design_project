@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <meta name="description" content="To help our client to make an appointment on our website.">
+    <meta name="keywords" content="Name,Phone,Email Address,Appointment Date,Reason for visit,Submit appointment">
+    <meta name="author" content="YUNTING XIE">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Mina:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body id="appointment">
+        <!-- Header -->
+        <header class="py-3">
+            <div class="container d-flex justify-content-between align-items-center position-relative">
+                <!-- Logo -->
+                <div>
+                    <img src="/logo.png" alt="Fair Pets Vet Logo" class="img-fluid" style="max-height: 100px;">
+                </div>
+                <!-- Home Icon -->
+    
+                <div class="col-md-7 d-flex justify-content-end">
+                    <div class="home-icon">
+                        <a href="index.html" class="material-icons">home</a>
+                    </div>
+                    <!-- Navbar -->
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="appointment.html">Appointment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="staff.html">Staffs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main>
+            <h2><strong>See you soon!</strong></h2>
+            <p class="FORM"> PLEASE FILL OUT THIS FORM TO REQUEST FOR AN APPOINTMENT.</p>
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>First name<small> (required)</small></td>
+                        <td><input type="text" name="firstname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name<small> (required)</small></td>
+                        <td><input type="text" name="lastname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pet's name<small> (required)</small></td>
+                        <td><input type="text" name="petname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number<small> (required)</small></td>
+                        <td><input type="tel" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address<small>(required)</small></td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pet's Species</td>
+                        <td>
+                            <select name="species" required>
+                                <option value=""></option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option> 
+                                <option value="other">Other animals</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doctor Preference<small> (required)</small></td>
+                        <td>
+                            <select name="doctor" required>
+                                <option value=""></option>
+                                <option value="Dr. NICOLE">Dr. NICOLE</option>
+                                <option value="Dr. ASHLEY">Dr. ASHLEY</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Date</td>
+                        <td><input type="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Time</td>
+                        <td><input type="time" name="time" required></td>
+                    </tr>
+                    <tr>
+                        <td>Reason for Visit<small> (required)</small></td>
+                        <td><textarea name="reason" rows="4" required></textarea></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="Submit Appointment">
+            </form>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="email"><span class="material-icons">email</span> Email</h5>
+                        <p class="email">fairpetsvet@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="location"><span class="material-icons">location_on</span> Address</h5>
+                        <p class="location">3818 Blackwell Street, Fairbanks, Alaska</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="tel"><span class="material-icons">phone</span> Tel</h5>
+                        <p class="tel">(654)130-9122</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <p class="copyright">© 2024 Fair Pets Vet. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    </body>
+</html>

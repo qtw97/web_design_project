@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staffs Page</title>
+    <meta name="description" content="To show our teams, we have 2 doctors, 2 technicians and 2 support staff and one receptionist. ">
+    <meta name="keywords" content="VETERINARIAN,TECHNICIAN,ASSISTANT,RECEPTIONIST">
+    <meta name="author" content="YUNTING XIE">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Mina:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body id="staff">
+        <!-- Header -->
+        <header class="py-3">
+            <div class="container d-flex justify-content-between align-items-center position-relative">
+                <!-- Logo -->
+                <div>
+                    <img src="/logo.png" alt="Fair Pets Vet Logo" class="img-fluid" style="max-height: 100px;">
+                </div>
+                <!-- Home Icon -->
+    
+                <div class="col-md-7 d-flex justify-content-end">
+                    <div class="home-icon">
+                        <a href="index.html" class="material-icons">home</a>
+                    </div>
+                    <!-- Navbar -->
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="appointment.html">Appointment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="staff.html">Staffs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="container col-md-6 my-5">
+            <!-- Buttons -->
+            <div class="text-center mb-4">
+                <button type="button" class="btn btn-info mr-2" onclick="showAll()">ALL</button>
+                <button type="button" class="btn btn-info mr-2" onclick="showCategory('VETERINARIAN')">VETERINARIAN</button>
+                <button type="button" class="btn btn-info mr-2" onclick="showCategory('TECHNICIAN')">TECHNICIAN</button>
+                <button type="button" class="btn btn-info mr-2" onclick="showCategory('ASSISTANT')">ASSISTANT</button>
+                <button type="button" class="btn btn-info mr-2" onclick="showCategory('RECEPTIONIST')">RECEPTIONIST</button>
+            </div>
+            <div class="row">
+                <!-- First Image and Description -->
+                <div class="col-md-4">
+                    <img src="NICOLE.png" alt="Doctor" class="img-fluid mb-3">
+                    <p><strong>Dr.NICOLE</strong><br>VETERINARIAN</p>
+                </div>
+                <!-- Second Image and Description -->
+                <div class="col-md-4">
+                    <img src="ASHLEY.png" alt="Doctor" class="img-fluid mb-3">
+                    <p><strong>Dr.ASHLEY</strong><br>VETERINARIAN</p>
+                </div>
+                <!-- Third Image and Description -->
+                <div class="col-md-4">
+                    <img src="VINCENT.png" alt="Technician" class="img-fluid mb-3">
+                    <p><strong>VINCENT</strong><br>TECHNICIAN</p>
+                </div>
+                <!-- Fourth Image and Description -->
+                <div class="col-md-4">
+                    <img src="JOHN.png" alt="Image 4" class="img-fluid mb-3">
+                    <p><strong>JOHN</strong><br>TECHNICIAN</p>
+                </div>
+                <!-- Fifth Image and Description -->
+                <div class="col-md-4">
+                    <img src="BONNIE.png" alt="Technician" class="img-fluid mb-3">
+                    <p><strong>BONNIE</strong><br>ASSISTANT</p>
+                </div>
+                <!-- Sixth Image and Description -->
+                <div class="col-md-4">
+                    <img src="KAREN.png" alt="Technician" class="img-fluid mb-3">
+                    <p><strong>KAREN</strong><br>ASSISTANT</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="ASHLEY.png" alt="Receptionist" class="img-fluid mb-3">
+                    <p><strong>ALYSSA</strong><br>RECEPTIONIST</p>
+                </div>
+            </div>
+        </main>
+        <script>
+            function showAll() {
+                // Show all images
+                $('.col-md-4').show();
+            }
+        
+            function showCategory(category) {
+                // Hide all images
+                $('.col-md-4').hide();
+                // Show images with specified category
+                $('.col-md-4').each(function() {
+                    if ($(this).find('p').text().includes(category)) {
+                        $(this).show();
+                    }
+                });
+            }
+        </script>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="email"><span class="material-icons">email</span> Email</h5>
+                        <p class="email">fairpetsvet@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="location"><span class="material-icons">location_on</span> Address</h5>
+                        <p class="location">3818 Blackwell Street, Fairbanks, Alaska</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="tel"><span class="material-icons">phone</span> Tel</h5>
+                        <p class="tel">(654)130-9122</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <p class="copyright">© 2024 Fair Pets Vet. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    </body>
+</html> 
