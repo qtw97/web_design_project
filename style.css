@@ -190,3 +190,70 @@ h2{
     -1px 1px 0 white,
     1px 1px 0 white;
 }
+
+.select-title {
+    font-family: lalezar;
+    margin-bottom: 4%;
+}   
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.service-item {
+    width: 30%;
+    font-family: mina;
+    font-weight: 700;
+    font-size: 3vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 3%;
+}
+.service-item:nth-child(odd) {
+    background-color: #F37935;
+}
+.service-item:nth-child(even) {
+    background-color: #2579A2;
+}
+.service-description {
+    font-family: mina;
+    font-size:15pt;
+    border: 6px solid #FFDF8B;
+    background-color: #fff;
+    color: #000;
+    display: none;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 85%;
+    padding:40px;   
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .service-description {
+    display: block;
+}
+.contact-title{
+    font-family: lalezar;
+    color: #2579a2;
+    font-size: 25pt;
+}
+.contact-info p, .form-label{
+    font-family: mina;
+    color:#2579a2;
+}
+.contact-container {
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+.inquiry-form .form-control, .inquiry-form .btn {
+    margin-bottom: 15px;
+}
