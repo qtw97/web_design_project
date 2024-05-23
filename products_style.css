@@ -13,7 +13,7 @@ img {
 }
 
 .card {
-    overflow: hidden;
+    overflow: auto;
     text-overflow: ellipsis;
 }
 
