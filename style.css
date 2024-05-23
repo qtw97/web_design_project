@@ -22,6 +22,36 @@
     
 }
 
+#staff {
+    background-image: url('staff_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+
+/* Media query for smaller screens*/
+@media only screen and (max-device-width: 768px) {
+    #staff{
+        background-image: url('ap_background.png');
+        background-size: cover;
+    }
+}
+
+#appointment {
+    background-image: url('ap_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+
+/* Media query for smaller screens*/
+@media only screen and (max-device-width: 768px) {
+    #appointment{
+        background-image: url('staff_ackground.png');
+        background-size: cover;
+    }
+}
+
 body {
     font-family: 'Mina', sans-serif;
     font-size: 13pt;
