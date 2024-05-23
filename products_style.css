@@ -7,9 +7,11 @@ body {
 img {
     height: 50%;
 }
+
 .price {
     font-weight: bold;
 }
+
 .card {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -17,7 +19,7 @@ img {
 
 .card-text {
     display: -webkit-box;
-    overflow:visible;
+    overflow: visible;
     text-overflow: ellipsis;
 }
 
