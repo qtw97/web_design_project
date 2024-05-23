@@ -8,6 +8,17 @@
         background: url('index_background_mobile.png') no-repeat center center fixed;
         background-size: cover;
     }
+
+    .btn-secondary {
+        margin:0 !important;
+        background-color: #F0AD00;
+        border: none;
+        border: 1px solid white;
+    }
+    
+    .tel {
+        margin-left: 0% !important;
+    }
     
 }
 
