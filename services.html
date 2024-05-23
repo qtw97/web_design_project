@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <meta name="description"
+        content="Browse our list of veterinary services to ensure the best medical care for your pets.">
+    <meta name="keywords" content="Veterinary services, emergency, examination, X-ray, dentistry, vaccination, surgery, medical care">
+    <meta name="author" content="Kejia Li">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Mina:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="services">
+
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <!-- Logo -->
+            <div>
+                <img src="/logo.png" alt="Fair Pets Vet Logo" class="img-fluid" style="max-height: 100px;">
+            </div>
+            <!-- Home Icon -->
+
+            <div class="col-md-7 d-flex justify-content-end">
+                <div class="home-icon">
+                    <a href="index.html" class="material-icons">home</a>
+                </div>
+                <!-- Navbar -->
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appointment.html">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">Staffs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <div class="container mt-5 text-center">
+        <h2 class="select-title">SELECT a service to see the details</h2>
+        <div class="service-container mt-4">
+            <label class="service-item" for="service1">Emergency</label>
+            <label class="service-item" for="service2">Examination</label>
+            <label class="service-item" for="service3">X-ray</label>
+            <label class="service-item" for="service4">Dentistry</label>
+            <label class="service-item" for="service5">Vaccination</label>
+            <label class="service-item" for="service6">Surgery</label>
+        </div>
+        <div class="description-container mt-4">
+            <input type="radio" id="service1" name="service">
+            <div class="service-description">We provide 24 hours a day emergency medical services 365 days a year, without appointment, to complement the services offered by your regular veterinarian.</div>
+            <input type="radio" id="service2" name="service">
+            <div class="service-description">A complete veterinary examination is the best way to ensure the overall health of your pet and prevent the onset and development of certain diseases and discomforts.</div>
+            <input type="radio" id="service3" name="service">
+            <div class="service-description">Please contact a member of our team for more information on the X-ray.</div>
+            <input type="radio" id="service4" name="service">
+            <div class="service-description">If you notice changes in how your pet chews, a significant amount of tartar, redness of the gums, bad breath or other anomalies, let us know and come see us for a check-up.</div>
+            <input type="radio" id="service5" name="service">
+            <div class="service-description">Vaccine helps the immune system defend itself in the event of exposure to a disease or virus. Our team will offer advice based on age and lifestyle.</div>
+            <input type="radio" id="service6" name="service">
+            <div class="service-description">We will create a treatment plan to care for your pet. In all cases, a general examination and blood work will be done before the surgical procedure.</div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="email"><span class="material-icons">email</span> Email</h5>
+                    <p class="email">fairpetsvet@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="location"><span class="material-icons">location_on</span> Address</h5>
+                    <p class="location">3818 Blackwell Street, Fairbanks, Alaska</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="tel"><span class="material-icons">phone</span> Tel</h5>
+                    <p class="tel">(654)130-9122</p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <p class="copyright">© 2024 Fair Pets Vet. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
